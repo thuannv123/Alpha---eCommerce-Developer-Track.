@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Trirong";
+  src: url("/asset/font/trirong.woff2") format("woff2");
+  font-style: normal;
+}
+* {
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+}
+body {
+  letter-spacing: 0.6px;
+}
+.Mobile_only .main_product-image-box img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.main_product-images img {
+  object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.main_product-image span,
+.product-selector_compare,
+.product-selector_atc,
+.rev-star span,
+.product_tab-content ul li strong,
+.title_wrap,
+.jdgm-write-rev-link,
+.count {
+  font-family: "Montserrat", sans-serif;
+}
+.product_lymph-ingr-thumb h5,
+.rev_title {
+  font-family: "Trirong", serif;
+}
+.shopify-section p,
+.shopify-section .kaching-bundles__free-gift__text,
+.col_pp_delivery__Date,
+.shopify-section strong,
+.product_judge-outer p,
+.shopify-section a,
+.product_primary-btn-footer span {
+  font-family: "Nunito", sans-serif;
+}
+.product_tab-block {
+  border: 1px solid #d2d2d2;
+}
+.product_tab-block .product_tab-thumb span img {
+  transition: all 0.2s;
+}
+.product_tab-block .product_tab-content,
+.product_lymph-ingr-content {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    padding-top 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: max-height;
+}
+
+.product_tab-block.active {
+  border: 1px solid #039869;
+}
+.product_tab-block.active .product_tab-thumb span img {
+  transform: rotate(45deg);
+}
+.product_tab-block.active .product_tab-content {
+  padding-top: 16px;
+  max-height: 2000px;
+}
+
+.product_lymph-ingr-content.active {
+  padding-top: 12px;
+  max-height: 2000px;
+}
+.product_tab-thumb p,
+.product_tab-content p {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.3em;
+  letter-spacing: 0;
+}
+.product_tab-content ul {
+  display: block;
+  list-style-type: disc;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+  margin: 16px 0;
+}
+.product_tab-content ul li {
+  font-family: "Montserrat";
+  color: rgb(0 0 0 / 75%);
+  display: list-item;
+  unicode-bidi: isolate;
+  line-height: 28.8px;
+}
+
+.section_press_logos_outer .logos_wrap {
+  animation: logo_scroll 30s infinite linear;
+}
+.pli_top-text ul li {
+  padding-left: 32px;
+  color: #0c7c00;
+  background-image: url(img/check-mark.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  list-style: none;
+  font-weight: 600;
+  font-family: Nunito;
+  margin: 8px 0;
+}
+.pli_bottom-text ul li,
+.pli_pink-text ul li {
+  padding-left: 32px;
+  color: #a60003;
+  background-image: url(img/check-mark2.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  list-style: none;
+  font-weight: 600;
+  font-family: Nunito;
+  margin: 8px 0;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star.on {
+  color: #fa8a8a;
+}
+
+.star.off {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #fa8a8a;
+  text-stroke: 1.5px #fa8a8a;
+}
+
+@media only screen and (max-width: 678px) {
+  .Desktop_only {
+    display: none !important;
+  }
+  .shopify-section p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 678px) {
+  .Mobile_only {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bar {
+    margin: 0 24px;
+    width: 140px;
+    display: block;
+  }
+}
+@keyframes logo_scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
