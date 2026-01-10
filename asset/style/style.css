@@ -22,6 +22,10 @@ body {
   border-radius: 8px;
   overflow: hidden;
 }
+.shopify-section select,
+.shopify-section option {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .main_product-image span,
 .product-selector_compare,
 .product-selector_atc,
@@ -29,8 +33,14 @@ body {
 .product_tab-content ul li strong,
 .title_wrap,
 .shopify-section .jdgm-write-rev-link,
-.count {
+.count,
+.view_info span,
+.time_rev span,
+.rev-pagination span {
   font-family: "Montserrat", sans-serif;
+}
+.shopify-section .jdgm-medal__value p {
+  font-family: "Nunito Sans", "Helvetica", Arial, sans-serif;
 }
 .product_lymph-ingr-thumb h5,
 .rev_title {
@@ -140,7 +150,28 @@ body {
   -webkit-text-stroke: 1.5px #fa8a8a;
   text-stroke: 1.5px #fa8a8a;
 }
-
+.view_icon::before {
+  font-family: "Font Awesome 7 Free";
+  font-size: 20px;
+  line-height: 36px;
+  content: "\f007";
+  color: #fa8a8a;
+}
+.view_icon::after {
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  content: "\f00c";
+  color: #fff;
+  position: absolute;
+  background-color: #fa8a8a;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  font-size: 6px;
+  line-height: 11px;
+  bottom: 0;
+  right: 0;
+}
 @media only screen and (max-width: 678px) {
   .Desktop_only {
     display: none !important;
