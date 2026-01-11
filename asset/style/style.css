@@ -172,6 +172,109 @@ body {
   bottom: 0;
   right: 0;
 }
+.slick-initialized .slick-slide {
+  padding: 8px;
+}
+.slick-initialized .slick-slide .product_video {
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.pdp-video-wrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.pdp-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.pdp-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.pdp-play-overlay::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/asset/img/mingcute_play-fill.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.pdp-video::-webkit-media-controls,
+.pdp-video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 0 !important;
+}
+.shopify-section .my_slider .slick-dots {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  max-width: calc(100% - 200px);
+  position: relative;
+  bottom: unset;
+  margin: 25px 0 0;
+}
+
+.shopify-section .my_slider .slick-dots li {
+  width: 100%;
+  margin: 0;
+  line-height: 1.8;
+}
+.shopify-section .my_slider .slick-dots li button::before {
+  display: none;
+}
+.shopify-section .my_slider .slick-dots li button {
+  width: 100%;
+  background: #00000026;
+  height: 4px;
+  padding: 0;
+}
+.shopify-section .my_slider .slick-dots li.slick-active button {
+  background: #039869;
+}
+.shopify-section .my_slider .slick-arrow {
+  right: 0;
+  left: unset;
+  top: unset;
+  bottom: -15px;
+  width: 32px;
+  height: 32px;
+}
+.shopify-section .my_slider .slick-prev::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/asset/img/arrow_left.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 40px;
+  opacity: 1 !important;
+  position: relative;
+}
+.shopify-section .my_slider .slick-next::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/asset/img/arrow_left.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1 !important;
+  transform: rotate(180deg);
+}
 @media only screen and (max-width: 678px) {
   .Desktop_only {
     display: none !important;
