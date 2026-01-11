@@ -55,9 +55,7 @@ body {
 .product_primary-btn-footer span {
   font-family: "Nunito", sans-serif;
 }
-.product_tab-block {
-  border: 1px solid #d2d2d2;
-}
+
 .product_tab-block .product_tab-thumb span img {
   transition: all 0.2s;
 }
@@ -71,7 +69,7 @@ body {
   will-change: max-height;
 }
 
-.product_tab-block.active {
+.product_tab-block.block-rev.active {
   border: 1px solid #039869;
 }
 .product_tab-block.active .product_tab-thumb span img {
@@ -274,6 +272,25 @@ body {
   background-repeat: no-repeat;
   opacity: 1 !important;
   transform: rotate(180deg);
+}
+.faq_box .faq_content {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    padding-top 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: max-height;
+  overflow: hidden;
+}
+.faq_box .faq_icon {
+  transition: all 0.3s ease;
+}
+.faq_box.active .faq_icon {
+  transform: rotate(180deg);
+}
+.faq_box.active .faq_content {
+  padding-top: 16px;
+  max-height: 1000px;
 }
 @media only screen and (max-width: 678px) {
   .Desktop_only {
