@@ -196,7 +196,6 @@ body {
   inset: 0;
   display: grid;
   place-items: center;
-  background: rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
 .pdp-play-overlay::after {
@@ -258,7 +257,7 @@ body {
   background-image: url("/asset/img/arrow_left.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  right: 40px;
+  right: 45px;
   opacity: 1 !important;
   position: relative;
 }
