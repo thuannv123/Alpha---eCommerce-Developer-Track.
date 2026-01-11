@@ -49,7 +49,9 @@ body {
   font-family: "Nunito Sans", "Helvetica", Arial, sans-serif;
 }
 .product_lymph-ingr-thumb h5,
-.rev_title {
+.rev_title,
+.tracking-normal,
+.product_why-bloat-cell-inn h4 {
   font-family: "Trirong", serif;
 }
 .shopify-section .opensan,
@@ -62,6 +64,7 @@ body {
 .col_pp_delivery__Date,
 .shopify-section strong,
 .product_judge-outer p,
+.product_why-nothing-subtitle span,
 .shopify-section a,
 .product_primary-btn-footer span {
   font-family: "Nunito", sans-serif;
@@ -150,7 +153,7 @@ body {
 .pli_top-text ul li {
   padding-left: 32px;
   color: #0c7c00;
-  background-image: url(img/check-mark.png);
+  background-image: url(/asset/img/check-mark.png);
   background-size: 20px;
   background-repeat: no-repeat;
   list-style: none;
@@ -162,7 +165,7 @@ body {
 .pli_pink-text ul li {
   padding-left: 32px;
   color: #a60003;
-  background-image: url(img/check-mark2.png);
+  background-image: url(/asset/img/check-mark2.png);
   background-size: 20px;
   background-repeat: no-repeat;
   list-style: none;
@@ -328,6 +331,24 @@ body {
 .faq_box.active .faq_content {
   padding-top: 16px;
   max-height: 1000px;
+}
+.product-selector_block .product-selector_bubble_inn {
+  opacity: 0;
+}
+.product-selector_block .product-selector_perks {
+  opacity: 0.6;
+}
+.product-selector_block.is-selected {
+  border-color: #039869;
+}
+.product-selector_block.is-selected .product-selector_perks {
+  opacity: 1;
+}
+.hide {
+  display: none;
+}
+.product-selector_block.is-selected .product-selector_bubble_inn {
+  opacity: 1;
 }
 @media only screen and (max-width: 678px) {
   .Desktop_only {
