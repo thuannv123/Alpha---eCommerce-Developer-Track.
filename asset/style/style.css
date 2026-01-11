@@ -3,6 +3,12 @@
   src: url("/asset/font/trirong.woff2") format("woff2");
   font-style: normal;
 }
+@font-face {
+  font-family: "Lora Medium";
+  src: url("/asset/font/Lora-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
 * {
   font-family: "Lora", serif;
   box-sizing: border-box;
@@ -46,6 +52,11 @@ body {
 .rev_title {
   font-family: "Trirong", serif;
 }
+.shopify-section .opensan,
+.shopify-section .opensan span,
+.testimonial-cta p {
+  font-family: "Open sans", serif !important;
+}
 .shopify-section p,
 .shopify-section .kaching-bundles__free-gift__text,
 .col_pp_delivery__Date,
@@ -55,7 +66,34 @@ body {
 .product_primary-btn-footer span {
   font-family: "Nunito", sans-serif;
 }
-
+.shopify-section .text-if {
+  font-family: "Lora Medium", serif;
+  font-weight: 500;
+}
+.iframe .flex-if {
+  padding-right: 10px;
+  opacity: 1;
+  transition: all 0.4s;
+  visibility: unset;
+}
+.iframe.active .flex-if {
+  opacity: 0;
+  max-width: 0;
+  padding: 0;
+  visibility: hidden;
+}
+.iframe .flex-if {
+  z-index: 1;
+}
+.iframe.active .flex-if {
+  z-index: 0;
+}
+.iframe .none {
+  z-index: 0;
+}
+.iframe.active .none {
+  z-index: 1;
+}
 .product_tab-block .product_tab-thumb span img {
   transition: all 0.2s;
 }

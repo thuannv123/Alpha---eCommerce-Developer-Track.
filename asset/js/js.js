@@ -6,4 +6,7 @@ $(document).ready(function () {
     e.stopPropagation();
     $(this).find(".product_lymph-ingr-content").toggleClass("active");
   });
+  $(".close-btn").click(function () {
+    $(".iframe").toggleClass("active");
+  });
 });
