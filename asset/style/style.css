@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Trirong";
-  src: url("/asset/font/trirong.woff2") format("woff2");
+  src: url("../font/trirong.woff2") format("woff2");
   font-style: normal;
 }
 @font-face {
   font-family: "Lora Medium";
-  src: url("/asset/font/Lora-Medium.ttf") format("truetype");
+  src: url("../font/Lora-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
@@ -74,7 +74,7 @@ body {
   position: absolute;
   width: 24px;
   height: 24px;
-  background-image: url(/asset/img/close.png);
+  background-image: url(../img/close.png);
   background-position: center;
   background-size: contain;
   top: 8px;
@@ -168,7 +168,7 @@ body {
 .pli_top-text ul li {
   padding-left: 32px;
   color: #0c7c00;
-  background-image: url(/asset/img/check-mark.png);
+  background-image: url(../img/check-mark.png);
   background-size: 20px;
   background-repeat: no-repeat;
   list-style: none;
@@ -180,7 +180,7 @@ body {
 .pli_pink-text ul li {
   padding-left: 32px;
   color: #a60003;
-  background-image: url(/asset/img/check-mark2.png);
+  background-image: url(../img/check-mark2.png);
   background-size: 20px;
   background-repeat: no-repeat;
   list-style: none;
@@ -268,7 +268,7 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(/asset/img/right-arrow.webp);
+  background-image: url(../img/right-arrow.webp);
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1 !important;
@@ -278,7 +278,7 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(/asset/img/left-arrow.webp);
+  background-image: url(../img/left-arrow.webp);
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1 !important;
@@ -302,7 +302,7 @@ body {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url("/asset/img/mingcute_play-fill.webp");
+  background-image: url("../img/mingcute_play-fill.webp");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -320,7 +320,7 @@ body {
   max-width: calc(100% - 200px);
   position: relative;
   bottom: unset;
-  margin: 25px 0 0;
+  margin: 26px 0 0;
 }
 
 .shopify-section .my_slider .slick-dots li {
@@ -340,6 +340,9 @@ body {
 .shopify-section .my_slider .slick-dots li.slick-active button {
   background: #039869;
 }
+.shopify-section .my_slider .slick-prev.slick-arrow {
+  right: -1px;
+}
 .shopify-section .my_slider .slick-arrow {
   right: 0;
   left: unset;
@@ -353,7 +356,7 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url("/asset/img/arrow_left.webp");
+  background-image: url("../img/arrow_left.webp");
   background-size: contain;
   background-repeat: no-repeat;
   right: 45px;
@@ -365,7 +368,7 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url("/asset/img/arrow_left.webp");
+  background-image: url("../img/arrow_left.webp");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 1 !important;
@@ -408,6 +411,9 @@ body {
 .product-selector_block.is-selected .product-selector_bubble_inn {
   opacity: 1;
 }
+.skip-ct.active {
+  display: none;
+}
 @media only screen and (max-width: 678px) {
   .Desktop_only {
     display: none !important;
@@ -433,7 +439,7 @@ body {
     max-width: calc(100% - 100px);
   }
   .shopify-section .my_slider .slick-arrow {
-    right: 15px;
+    right: 15px !important;
   }
 }
 
