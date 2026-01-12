@@ -66,8 +66,23 @@ body {
 .product_judge-outer p,
 .product_why-nothing-subtitle span,
 .shopify-section a,
-.product_primary-btn-footer span {
+.product_primary-btn-footer span,
+.btn-pop {
   font-family: "Nunito", sans-serif;
+}
+.btn-close_pop {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url(/asset/img/close.png);
+  background-position: center;
+  background-size: contain;
+  top: 8px;
+  right: 8px;
+  transform: rotate(45deg);
+  border-radius: 50%;
+  border: 1px solid #d5416e;
+  cursor: pointer;
 }
 .shopify-section .text-if {
   font-family: "Lora Medium", serif;

@@ -37,4 +37,13 @@ $(document).ready(function () {
 
     syncFill($container, 2);
   });
+  //popup
+  const $pop = $("#pop"),
+    open = () => $pop.removeClass("hidden").hide().fadeIn(150),
+    close = () => $pop.fadeOut(150, () => $pop.addClass("hidden"));
+
+  $(".js-open").on("click", open);
+  $pop
+    .on("click", ".js-close", close)
+    .on("click", (e) => e.target === e.currentTarget && close());
 });

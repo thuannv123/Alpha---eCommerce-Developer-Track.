@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="asset/style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/asset/img/meta.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -66,7 +67,7 @@
                         src="/asset/img/lacay.png"
                       />
                     </span>
-                    <span class="text-[14px] text-[#000000bf]">
+                    <span class="js-open text-[14px] text-[#000000bf]">
                       Nutritional Information
                     </span>
                   </div>
@@ -126,7 +127,7 @@
                       <div class="flex relative justify-center">
                         <img src="/asset/img/sl1.webp" />
                         <div
-                          class="main_product-nutrition-info absolute bottom-8 flex z-[2] flex items-center justify-center gap-2 leading-[1.2em] max-w-[290px] mx-auto py-2 px-6 bg-[#ffffffd9] border border-black rounded-[24px] cursor-pointer text-[14px]"
+                          class="js-open main_product-nutrition-info absolute bottom-8 flex z-[2] flex items-center justify-center gap-2 leading-[1.2em] max-w-[290px] mx-auto py-2 px-6 bg-[#ffffffd9] border border-black rounded-[24px] cursor-pointer text-[14px]"
                         >
                           <span>
                             <img
@@ -694,12 +695,12 @@
               <img
                 loading="lazy"
                 class="Desktop_only product_bf-note-image w-full"
-                src="asset/img/CTA.avif.crdownload"
+                src="asset/img/CTA.avif"
               />
               <img
                 loading="lazy"
                 class="Mobile_only product_bf-note-image w-full"
-                src="asset/img/CTA.avif.crdownload"
+                src="asset/img/CTA_mb.avif"
               />
               <div class="product_atc-icons">
                 <div class="product_atc-icon-line flex items-center gap-2 my-3">
@@ -3287,6 +3288,56 @@
                 alt=""
                 class="min-[678px]:pb-[8.8px] w-full"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="pop"
+      class="hidden fixed bg-[#000000b3] z-[9999] left-0 top-0 w-full h-full max-[678px]:p-3"
+    >
+      <div class="flex items-center justify-center w-full h-full">
+        <div class="bg-white w-full p-4 max-w-[450px] rounded-xl relative">
+          <h2
+            class="main_product-title text-[28px] my-4 mt-0 leading-[1.4em] text-center"
+          >
+            Nutritional Information
+          </h2>
+          <button class="js-close btn-close_pop"></button>
+          <img class="Desktop_only w-full" src="/asset/img/pop_1.png" />
+          <img class="Mobile_only w-full" src="/asset/img/pop-2.png" />
+          <button
+            class="btn-pop p-5 cursor-pointer my-4 bg-black text-center text-base rounded-[8px] leading-[1.8] text-white w-full"
+          >
+            Try Lymphatic Drainage Risk-Free
+          </button>
+          <div class="main_product-points flex flex-wrap justify-center gap-3">
+            <div class="main_product-point-line flex items-center gap-1">
+              <img src="/asset/img/tick.png" class="w-4" />
+              <p class="text-[12px] m-0 leading-[1.3em]">
+                Made & produced in the USA
+              </p>
+            </div>
+
+            <div class="main_product-point-line flex items-center gap-1">
+              <img src="/asset/img/tick.png" class="w-4" />
+              <p class="text-[12px] m-0 leading-[1.3em]">
+                100% Natural Ingredients
+              </p>
+            </div>
+
+            <div class="main_product-point-line flex items-center gap-1">
+              <img src="/asset/img/tick.png" class="w-4" />
+              <p class="text-[12px] m-0 leading-[1.3em]">
+                60-Day Money-Back Guarantee
+              </p>
+            </div>
+
+            <div class="main_product-point-line flex items-center gap-1">
+              <img src="/asset/img/tick.png" class="w-4" />
+              <p class="text-[12px] m-0 leading-[1.3em]">Free Shipping</p>
             </div>
           </div>
         </div>
