@@ -31,4 +31,32 @@ $(document).ready(function () {
       },
     ],
   });
+  //slide mobile
+  $(".product-main").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: false,
+    fade: false,
+    speed: 400,
+    swipe: true,
+    draggable: true,
+    touchMove: true,
+    asNavFor: ".product-thumbs",
+    adaptiveHeight: true,
+  });
+
+  $(".product-thumbs").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: ".product-main",
+    focusOnSelect: true,
+    arrows: false,
+    infinite: true,
+    centerMode: false,
+    responsive: [
+      { breakpoint: 768, settings: { slidesToShow: 4 } },
+      { breakpoint: 480, settings: { slidesToShow: 4 } },
+    ],
+  });
 });
