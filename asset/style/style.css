@@ -400,12 +400,34 @@ body {
   .shopify-section p {
     font-size: 16px;
   }
+  .shopify-section .iframe .text-if {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  .shopify-section .iframe p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .bar {
+    margin: 0 16px;
+    width: 126px;
+    display: block;
+  }
+  .shopify-section .my_slider .slick-dots {
+    max-width: calc(100% - 100px);
+  }
+  .shopify-section .my_slider .slick-arrow {
+    right: 15px;
+  }
 }
+
 @media only screen and (min-width: 678px) {
   .Mobile_only {
     display: none !important;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .bar {
     margin: 0 24px;

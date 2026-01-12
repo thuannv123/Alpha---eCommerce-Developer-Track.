@@ -37,25 +37,4 @@ $(document).ready(function () {
 
     syncFill($container, 2);
   });
-  $(".pdp-main").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    asNavFor: ".pdp-thumbs",
-    adaptiveHeight: true,
-  });
-
-  $(".pdp-thumbs").slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: ".pdp-main",
-    focusOnSelect: true,
-    arrows: false,
-    dots: false,
-    responsive: [
-      { breakpoint: 768, settings: { slidesToShow: 4 } },
-      { breakpoint: 480, settings: { slidesToShow: 3 } },
-    ],
-  });
 });

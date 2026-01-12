@@ -5,7 +5,7 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    my_slider: [
+    responsive: [
       {
         breakpoint: 1024,
         settings: {
@@ -25,7 +25,7 @@ $(document).ready(function () {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.5,
           slidesToScroll: 1,
         },
       },
